@@ -4,7 +4,7 @@ variable "policies_dir" {
 }
 
 variable "template_vars" {
-  description = "Map of policy name to the template variables supplied to that policy. Keys are the policy name derived from the file path, so policies/team/dev.hcl is keyed as \"team-dev\". Policies with no entry here are rendered with an empty variable map"
+  description = "Map of policy name to the template variables supplied to that .hcl.tpl policy. Keys are the policy name derived from the file path, so policies/team/dev.hcl.tpl is keyed as \"team-dev\""
   type        = map(map(string))
   default     = {}
 }
